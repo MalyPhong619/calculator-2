@@ -43,6 +43,13 @@ var multiply2 = parseInt($("#multiply2").val());
 var finalans = multiply(multiply1, multiply2);
 $("#mult").text(finalans)
 });
+$(".divide").submit(function(event){
+  event.preventDefault();
+  var number1div = parseInt($("#number1div").val());
+  var number2div = parseInt($("#number2div").val());
+  var finaldiv = divide(number1div, number2div);
+  $("#div").text(finaldiv);
+});
 
 
 
