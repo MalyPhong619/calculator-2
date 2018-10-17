@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Calculator</title>
-  </head>
-  <body>
-    <h1>Calculator</h1>
-    <script src="js/scripts.js"></script>
-  </body>
+<head>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <form class="add">
+    <input type="text" id="number1Add">
+    <input type="text" id="number2Add" >
+    <button type="submit" name="button">Add!</button>
+  </form>
+  <p> The sum is: <span id="addSum"></span> !</p>
+  <form class="subtract">
+    <input type="text" id="subtract1">
+    <input type="text" id="subtract2">
+    <button type="submit" name="button">sub</button>
+  </form>
+  <p>the answer is: <span id="subsum"></span>
+  </p>
+
+  <form class="multiply">
+<input type="text" id="multiply1">
+<input type="text" id="multiply2">
+<button type="submit" name="button">mult</button>
+  </form>
+<p>the answer is:<span id=mult></span></p>
+
+
+
+
+</body>
 </html>
