@@ -11,34 +11,18 @@
   <h1>Calculator</h1>
 
   <form class="add">
-    <input type="text" id="number1Add">
-    <input type="text" id="number2Add" >
-    <button type="submit" name="button">Add!</button>
+    <input type="text" id="inputOne">
+    <input type="text" id="inputTwo">
+
+    <input type="radio" name="operation" value="add">
+    <input type="radio" name="operation" value="subtract">
+    <input type="radio" name="operation" value="multiply">
+    <input type="radio" name="operation" value="divide">
+
+    <button type="submit" name="button">=</button>
   </form>
-  <p> The sum is: <span id="addSum"></span> !</p>
-  <form class="subtract">
-    <input type="text" id="subtract1">
-    <input type="text" id="subtract2">
-    <button type="submit" name="button">sub</button>
-  </form>
-  <p>the answer is: <span id="subsum"></span>
-  </p>
 
-  <form class="multiply">
-<input type="text" id="multiply1">
-<input type="text" id="multiply2">
-<button type="submit" name="button">mult</button>
-  </form>
-<p>the answer is:<span id=mult></span></p>
-
-  <form class="divide">
-    <input type="text" id="number1div">
-<input type="text" id="number2div">
-<button type="submit" name="button">divide</button>
-<p>the answer is: <span id="div" ></span> </p>
-
-
-
+  <div class="" id="output"></div>
 
 </body>
 </html>

@@ -21,37 +21,21 @@ return number1 / number2;
 $(document).ready(function() {
   $(".add").submit(function(event) {
     event.preventDefault();
+    var numberOne = parseInt($("input#inputOne").val());
+    var numberTwo = parseInt($("input#inputTwo").val());
+    var operation = $("input:radio[name=operation]:checked").val();
+    var result;
 
-    var inputadd1 = parseInt($("#number1Add").val());
-    var inputadd2 = parseInt($("#number2Add").val());
-
-var finalsum = add(inputadd1, inputadd2);
-
-$("#addSum").text(finalsum);
+    if (operation === "add") {
+      result = add(numberOne, numberTwo);
+    } else if (operation === "subtract") {
+      result = subtract(numberOne, numberTwo);
+    } else if (operation === "multiply") {
+      result = multiply(numberOne, numberTwo);
+    } else if (opoeration === divide) {
+      result = divide(numberOne, numberTwo);
+    }
+    
+    $("#output").text(result);
   });
-$(".subtract").submit(function(event){
-  event.preventDefault();
-  var subtract1 = parseInt($("#subtract1").val());
-  var subtract2 = parseInt($("#subtract2").val());
-  var finalsub = subtract(subtract1, subtract2);
-  $("#subsum").text(finalsub);
-});
-$(".multiply").submit(function(event){
-  event.preventDefault();
-var multiply1 = parseInt($("#multiply1").val());
-var multiply2 = parseInt($("#multiply2").val());
-var finalans = multiply(multiply1, multiply2);
-$("#mult").text(finalans)
-});
-$(".divide").submit(function(event){
-  event.preventDefault();
-  var number1div = parseInt($("#number1div").val());
-  var number2div = parseInt($("#number2div").val());
-  var finaldiv = divide(number1div, number2div);
-  $("#div").text(finaldiv);
-});
-
-
-
-
 });
